@@ -21,6 +21,9 @@ plt.scatter(sizes,prices,marker="x", color="blue")
 plt.plot(sizes_interp,predicted_price_linear, color="red")
 plt.plot(sizes_interp,predicted_price_nonlinear, color="orange")
 plt.legend(["training dataset\n (right answers)", "linear fit","nonlinear fit"], loc ="lower right")
+plt.xticks([])
+plt.yticks([])
+
 
 plt.show()
 fig.savefig('assets/images/house_pricing_prediction.svg', format='svg', dpi=1200)
