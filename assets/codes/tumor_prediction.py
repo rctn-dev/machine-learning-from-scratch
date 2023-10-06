@@ -23,5 +23,8 @@ plt.scatter(age_malign,tumor_size_malign,marker="x",color="red")
 plt.plot(boundary_x,boundary_y,color="black")
 plt.legend(["benign", "malignent","boundary-curve"], loc ="lower right")
 
+plt.xticks([])
+plt.yticks([])
+
 plt.show()
 fig.savefig('assets/images/tumor_prediction.svg', format='svg', dpi=1200)
