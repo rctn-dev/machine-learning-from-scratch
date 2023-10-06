@@ -1,0 +1,6 @@
+axs[0].set_title("Supervised Learning: Regression")
+# axs[1].set_title('Unsupervised Learning: Clustering')
+# axs[1].scatter(age_benign,tumor_size_benign,marker="v",color="orange")
+# axs[1].scatter(age_malign,tumor_size_malign,marker="v",color="orange")
+# axs[1].set_xlim([10, 75])
+# axs[1].set_ylim([0.75, 2.5])
