@@ -9,7 +9,7 @@ predicted_price_linear=0.12*sizes_interp+72
 predicted_price_nonlinear=-0.000066*sizes_interp**2 +0.29*(sizes_interp)-17
 
 
-fig=plt.figure(figsize=(4,3), tight_layout=True, alpha=0.5)
+fig=plt.figure(figsize=(4,3), alpha=0.5)
 # ax = plt.axes()
 # ax.set_facecolor("whitesmoke")
 
