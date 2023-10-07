@@ -10,21 +10,19 @@ predicted_price_nonlinear=-0.000066*sizes_interp**2 +0.29*(sizes_interp)-17
 
 
 fig=plt.figure(figsize=(4,3), alpha=0.5)
-# ax = plt.axes()
-# ax.set_facecolor("whitesmoke")
-
 
 plt.title('Regression: House Price Prediction')
-plt.xlabel('House Sizes (m^2)')
-plt.ylabel('House Prices (*1000$)')
+plt.xlabel('Size')
+plt.ylabel('Price')
 plt.scatter(sizes,prices,marker="x", color="blue")
 plt.plot(sizes_interp,predicted_price_linear, color="red")
 plt.plot(sizes_interp,predicted_price_nonlinear, color="orange")
-plt.legend(["training dataset\n (right answers)", "linear fit","nonlinear fit"], loc ="lower right")
+plt.legend(["training dataset\n (right answers)"], loc ="lower right")
 plt.xticks([])
 plt.yticks([])
 
-
+plt.annotate("nonlinear fit",xy=(1300,250), xytext=(1000, 320), arrowprops=dict(facecolor='black', width=1, headwidth=5))
+plt.annotate("linear fit",xy=(1300,220), xytext=(1500, 150), arrowprops=dict(facecolor='black', width=1, headwidth=5))
 plt.show()
 fig.savefig('assets/images/house_pricing_prediction.svg', format='svg', dpi=1200)
 

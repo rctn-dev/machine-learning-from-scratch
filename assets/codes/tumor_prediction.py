@@ -10,21 +10,21 @@ boundary_x=np.arange(30,60,1)
 boundary_y=0.002*(boundary_x-60)**2+0.6
 
 
-fig=plt.figure(figsize=(4,3), tight_layout=True, alpha=0.5)
+fig=plt.figure(figsize=(4,3))
 # ax = plt.axes()
 # ax.set_facecolor("whitesmoke")
 
 
-plt.title('Regression: Tumor Prediction')
+plt.title('Regression: Tumor Type Prediction')
 plt.xlabel('Patient Age')
-plt.ylabel('Tumor Size (mm^2)')
+plt.ylabel('Tumor Size')
 plt.scatter(age_benign,tumor_size_benign,marker="o", color="blue")
 plt.scatter(age_malign,tumor_size_malign,marker="x",color="red")
 plt.plot(boundary_x,boundary_y,color="black")
-plt.legend(["benign", "malignent","boundary-curve"], loc ="lower right")
-
+plt.legend(["benign", "malignent"], loc ="lower right")
 plt.xticks([])
 plt.yticks([])
+plt.annotate("boundary-curve",xy=(32,2.2), xytext=(40, 2.35), arrowprops=dict(facecolor='black', width=1, headwidth=5))
 
 plt.show()
 fig.savefig('assets/images/tumor_prediction.svg', format='svg', dpi=1200)

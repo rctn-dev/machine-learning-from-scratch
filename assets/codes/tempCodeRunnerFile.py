@@ -1,0 +1,2 @@
+plt.xticks([])
+plt.yticks([])
