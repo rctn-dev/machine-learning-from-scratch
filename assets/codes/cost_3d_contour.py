@@ -9,7 +9,7 @@ X,Y = np.meshgrid(_x,_y)
 # matlab peaks function
 Z=3*(1-X)**2*np.exp(-(X**2) - (Y+1)**2)- 10*(X/5 - X**3 - Y**5)*np.exp(-X**2-Y**2) - 1/3*np.exp(-(X+1)**2 - Y**2) 
 # Plot the 3D surface and contour
-fig1=plt.figure(figsize=(6,4.5))
+fig1=plt.figure(figsize=(4,3))
 ax1=fig1.add_subplot(111,projection='3d')
 ax1.plot_surface(X, Y, Z, cmap='jet', edgecolor='none',linewidth=1,rstride=1, cstride=1,zorder=1)
 ax1.contour(X, Y, Z, 30, zdir='z', offset=-9.0, cmap='jet',linewidths=1.0)
