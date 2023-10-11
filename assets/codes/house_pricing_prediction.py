@@ -5,7 +5,8 @@ from  matplotlib import pyplot as plt
 prices=np.array([85,120,200,150,250,230,280,260,290,310])
 sizes=np.array([480,600,750,900,1000,1200,1500,1600,1800,2200])
 sizes_interp=np.arange(np.min(sizes),np.max(sizes),1) # arange(start,stop,step)
-predicted_price_linear=0.12*sizes_interp+72
+#predicted_price_linear=0.12*sizes_interp+72
+predicted_price_linear=0.1714*sizes_interp+0
 predicted_price_nonlinear=-0.000066*sizes_interp**2 +0.29*(sizes_interp)-17
 
 
