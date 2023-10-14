@@ -1,5 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
+
+
 data = np.loadtxt("assets/data/houses.txt",delimiter=',')  
 x_train,y_train=data[:,0:4], data[:,4]
 x_features = ['size(sqft)','bedrooms','floors','age']
@@ -12,3 +14,5 @@ for i in range(len(ax)):
     ax[i].set_xlabel(x_features[i])
 ax[0].set_ylabel("Price (1000's)")
 plt.show()
+
+
