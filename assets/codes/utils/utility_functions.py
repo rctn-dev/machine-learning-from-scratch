@@ -84,6 +84,7 @@ def compute_gradient_descent(x, y, w_init, b_init,alpha, max_iters,compute_cost,
     return w, b, cost_history
 
 def run_gradient_descent(x,y,alpha,iterations):
+   
     w_init=np.zeros(x.shape[1])
     b_init=0.
     w_final, b_final,_=compute_gradient_descent(x, y, w_init, b_init,alpha, iterations,compute_cost, compute_partial_gradient)
